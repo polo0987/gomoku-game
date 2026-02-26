@@ -2,7 +2,7 @@
 
 Web 版五子棋游戏，支持双人对战和人机对战（AI）。
 
-**[▶ 在线体验](https://your-username.github.io/gomoku-game/)**（部署后替换链接）
+**[▶ 在线体验](https://polo0987.github.io/gomoku-game/)**（CI 通过后自动部署）
 
 ## 功能
 
