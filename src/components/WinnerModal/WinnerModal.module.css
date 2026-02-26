@@ -1,0 +1,102 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  animation: fadeIn 0.2s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.modal {
+  background: var(--panel-bg);
+  border-radius: 20px;
+  padding: 36px 44px;
+  text-align: center;
+  box-shadow: 0 16px 48px rgba(0,0,0,0.5);
+  animation: slideUp 0.25s ease;
+  min-width: 280px;
+}
+
+@keyframes slideUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.emoji {
+  font-size: 3rem;
+  margin-bottom: 12px;
+}
+
+.title {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin-bottom: 6px;
+}
+
+.subtitle {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  margin-bottom: 28px;
+}
+
+.winnerStone {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-right: 4px;
+  position: relative;
+  top: -2px;
+}
+
+.winnerStone.white {
+  background: radial-gradient(circle at 35% 35%, #fff, #e8d8b0);
+  box-shadow: 1px 2px 4px rgba(0,0,0,0.3);
+}
+
+.winnerStone.black {
+  background: radial-gradient(circle at 35% 35%, #555, #111);
+  box-shadow: 1px 2px 4px rgba(0,0,0,0.5);
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.btnPrimary {
+  padding: 12px 24px;
+  background: var(--accent);
+  color: white;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 700;
+  box-shadow: 0 2px 8px rgba(232, 93, 4, 0.4);
+  transition: background 0.15s;
+}
+
+.btnPrimary:hover { background: #c94d02; }
+.btnPrimary:active { transform: scale(0.97); }
+
+.btnSecondary {
+  padding: 10px 24px;
+  background: transparent;
+  color: var(--text-secondary);
+  border-radius: 10px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border: 2px solid var(--board-line);
+  transition: background 0.15s;
+}
+
+.btnSecondary:hover { background: rgba(160,120,64,0.1); }

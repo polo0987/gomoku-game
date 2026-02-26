@@ -1,0 +1,40 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --board-bg: #dcb27a;
+  --board-line: #a07840;
+  --stone-shadow: rgba(0, 0, 0, 0.4);
+  --white-stone: #f5f0e8;
+  --black-stone: #1a1a1a;
+  --accent: #e85d04;
+  --text-primary: #2d1b00;
+  --text-secondary: #6b4c1e;
+  --bg-page: #1a0f00;
+  --panel-bg: rgba(255, 248, 220, 0.95);
+  --radius: 12px;
+}
+
+html, body {
+  height: 100%;
+  background: var(--bg-page);
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  color: var(--text-primary);
+  overflow: hidden;
+}
+
+#root {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  font-family: inherit;
+}
