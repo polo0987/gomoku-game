@@ -50,13 +50,12 @@
 }
 
 .btnDanger {
-  background: transparent;
-  color: var(--text-secondary);
-  font-size: 0.8rem;
-  padding: 6px;
+  background: #4a6fa5;
+  color: #ffffff;
+  border: none;
+  box-shadow: 0 2px 8px rgba(74, 111, 165, 0.4);
 }
 
 .btnDanger:hover {
-  color: var(--text-primary);
-  text-decoration: underline;
+  background: #3a5a8a;
 }
