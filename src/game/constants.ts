@@ -13,8 +13,15 @@ export const DIRECTIONS = [
 export const AI_DEPTH: Record<string, number> = {
   easy: 1,
   medium: 2,
-  hard: 4,
+  hard: 3,
 }
 
 // AI 候选点搜索半径
 export const AI_SEARCH_RADIUS = 2
+
+// 每层最多搜索的候选点数（移动排序后取前 N 个，控制搜索爆炸）
+export const AI_MAX_CANDIDATES: Record<string, number> = {
+  easy: 10,
+  medium: 15,
+  hard: 20,
+}
